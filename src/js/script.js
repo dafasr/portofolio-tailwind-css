@@ -2,5 +2,5 @@
 const hamburger = document.querySelector('#hamburger');
 
 hamburger.addEventListener('click', function () {
-  this.classList.toggle('hamburger-active');
+  hamburger.classList.toggle('hamburger-active');
 });
