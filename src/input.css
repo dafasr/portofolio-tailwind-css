@@ -9,3 +9,21 @@ body {
 .hamburger-line {
   @apply w-[30px] h-[2px] my-2 block bg-dark;
 }
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-80 transition duration-500 ease-in-out;
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 0px 64px 0px;
+}
